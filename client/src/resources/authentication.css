@@ -1,0 +1,42 @@
+.register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #96fbc4 0%, #f9f586 100%);
+}
+
+.lottie {
+    height: 400px;
+}
+
+.register input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    color:rgba(0, 0, 0, 0.6) !important;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+label {
+    color:rgba(0, 0, 0, 0.6) !important;
+}
+
+.register h1 {
+    font-size: 30px;
+    color: black;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .login {
+        flex-direction: column-reverse;
+        padding-top: 50px;
+    }
+}

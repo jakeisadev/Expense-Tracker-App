@@ -1,0 +1,16 @@
+const express = require('express')
+const dbConnect = require('./dbConnect')
+//I need cors always with MongoDB and React
+var cors = require('cors')
+const app = express()
+app.use(cors())
+app.use(express.json())
+const userRoute = require('./routes/usersRoute')
+const transactionsRoute = require('./routes/transactionsRoute')
+app.use('/api/users', userRoute)
+app.use('/api/transactions', transactionsRoute)
+
+
+const port = 5000
+
+app.listen(port, () => console.log(`Node JS server started at ${port}!`))
