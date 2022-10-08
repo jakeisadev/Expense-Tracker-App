@@ -12,7 +12,7 @@ app.use('/api/users', userRoute)
 app.use('/api/transactions', transactionsRoute)
 
 
-const port = process.env.POT || 5000
+const port = process.env.PORT || 5000
 
 if(process.env.NODE_ENV === 'production') {
     app.use('/', express.static('client/build'))
